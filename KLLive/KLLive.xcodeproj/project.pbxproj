@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F1B14AA360487F324858C2B /* Pods_KLLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D25B3B0F2368E1614CCE9F /* Pods_KLLive.framework */; };
+		F74F7F2125159DB9006EB931 /* KLMenueLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7F2025159DB9006EB931 /* KLMenueLayout.swift */; };
+		F74F7F2325159F1E006EB931 /* KLMenueTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7F2225159F1E006EB931 /* KLMenueTitleView.swift */; };
+		F74F7F2525159F43006EB931 /* KLMenueTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7F2425159F43006EB931 /* KLMenueTitleStyle.swift */; };
+		F74F7F2925159FA7006EB931 /* KLMenueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7F2825159FA7006EB931 /* KLMenueView.swift */; };
+		F74F7F2B2515FF92006EB931 /* KLRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F74F7F2A2515FF91006EB931 /* KLRoomViewController.xib */; };
+		F74F7F5A2519AB05006EB931 /* KLGiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7F582519AB05006EB931 /* KLGiftCell.swift */; };
+		F74F7F5B2519AB05006EB931 /* KLGiftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F74F7F592519AB05006EB931 /* KLGiftCell.xib */; };
+		F74F7F5D2519CBB8006EB931 /* KLGiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7F5C2519CBB8006EB931 /* KLGiftViewModel.swift */; };
+		F74F7F5F2519CCD1006EB931 /* KLGiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7F5E2519CCD1006EB931 /* KLGiftModel.swift */; };
+		F74F7F612519DBB1006EB931 /* KLGiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7F602519DBB1006EB931 /* KLGiftListView.swift */; };
+		F74F7F632519DBF3006EB931 /* GiftListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F74F7F622519DBF3006EB931 /* GiftListView.xib */; };
+		F74F7FAE251D7FCE006EB931 /* UIImageView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7FA7251D7FCE006EB931 /* UIImageView-Extension.swift */; };
+		F74F7FAF251D7FCE006EB931 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7FA8251D7FCE006EB931 /* UIColor-Extension.swift */; };
+		F74F7FB0251D7FCE006EB931 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7FA9251D7FCE006EB931 /* UIBarButtonItem-Extension.swift */; };
+		F74F7FB1251D7FCE006EB931 /* KLNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7FAA251D7FCE006EB931 /* KLNibLoadable.swift */; };
+		F74F7FB2251D7FCE006EB931 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7FAB251D7FCE006EB931 /* NSDate-Extension.swift */; };
+		F74F7FB3251D7FCE006EB931 /* UINavigationController-Extern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7FAC251D7FCE006EB931 /* UINavigationController-Extern.swift */; };
+		F74F7FB4251D7FCE006EB931 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7FAD251D7FCE006EB931 /* Common.swift */; };
+		F74F7FB7251D8114006EB931 /* KLCustomerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7FB5251D8113006EB931 /* KLCustomerNavigationController.swift */; };
+		F74F7FB8251D8114006EB931 /* KLBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7FB6251D8114006EB931 /* KLBaseViewController.swift */; };
+		F74F7FBA251D8187006EB931 /* KLNetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F7FB9251D8187006EB931 /* KLNetWorkTools.swift */; };
+		F7B59AAD251451940050D2AE /* KLRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B59AAC251451940050D2AE /* KLRoomViewController.swift */; };
+		F7B59AB525148E4B0050D2AE /* KLEmitterAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B59AB425148E4B0050D2AE /* KLEmitterAnimation.swift */; };
+		F7B59ABA2514A4590050D2AE /* KLRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B59AB92514A4590050D2AE /* KLRoomViewModel.swift */; };
+		F7B59AC22514AECC0050D2AE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B59AC12514AECC0050D2AE /* libz.tbd */; };
+		F7C375A12511B1DF00E92F9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C375A02511B1DF00E92F9F /* AppDelegate.swift */; };
+		F7C375A82511B1E000E92F9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C375A62511B1E000E92F9F /* Main.storyboard */; };
+		F7C375AA2511B20E00E92F9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7C375A92511B20E00E92F9F /* Assets.xcassets */; };
+		F7C375AD2511B20E00E92F9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C375AB2511B20E00E92F9F /* LaunchScreen.storyboard */; };
+		F7C375BB2511B64300E92F9F /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C375BA2511B64300E92F9F /* Discover.storyboard */; };
+		F7C375BD2511B65D00E92F9F /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C375BC2511B65D00E92F9F /* Rank.storyboard */; };
+		F7C375BF2511B67100E92F9F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C375BE2511B67100E92F9F /* Home.storyboard */; };
+		F7C375C12511B81400E92F9F /* KLMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C375C02511B81400E92F9F /* KLMainViewController.swift */; };
+		F7C375C42511B8F600E92F9F /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C375C32511B8F600E92F9F /* Mine.storyboard */; };
+		F7C375C92511BCC800E92F9F /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C375C82511BCC800E92F9F /* libstdc++.tbd */; };
+		F7C375D92511BF3700E92F9F /* KLHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C375D82511BF3700E92F9F /* KLHomeController.swift */; };
+		F7C375DB2511C10B00E92F9F /* KLRankController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C375DA2511C10B00E92F9F /* KLRankController.swift */; };
+		F7C375DD2511C17100E92F9F /* KLHomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C375DC2511C17100E92F9F /* KLHomeNavigationController.swift */; };
+		F7C375DF2511EA3700E92F9F /* KLTitlePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C375DE2511EA3700E92F9F /* KLTitlePageView.swift */; };
+		F7C375E12511EBC200E92F9F /* KLTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C375E02511EBC200E92F9F /* KLTitleView.swift */; };
+		F7C375E32511EBD900E92F9F /* KLContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C375E22511EBD900E92F9F /* KLContentView.swift */; };
+		F7C375E52511ED3A00E92F9F /* KLTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C375E42511ED3A00E92F9F /* KLTitleStyle.swift */; };
+		F7C375E8251310A000E92F9F /* KLHomeCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C375E72513109F00E92F9F /* KLHomeCollectionController.swift */; };
+		F7C375EA2513111A00E92F9F /* KLWaterLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C375E92513111A00E92F9F /* KLWaterLayout.swift */; };
+		F7C375EF25134B1900E92F9F /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7C375EC25134AD700E92F9F /* QHSohuGifSort.plist */; };
+		F7C375F025134B1900E92F9F /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7C375ED25134B1400E92F9F /* types.plist */; };
+		F7C375F125134B1900E92F9F /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7C375EE25134B1900E92F9F /* QHNormalEmotionSort.plist */; };
+		F7C375F325134C3E00E92F9F /* KLHomeTitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C375F225134C3E00E92F9F /* KLHomeTitleModel.swift */; };
+		F7C375FA251388E300E92F9F /* KLHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C375F9251388E300E92F9F /* KLHomeViewModel.swift */; };
+		F7C375FC25138DA400E92F9F /* KLAnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C375FB25138DA400E92F9F /* KLAnchorModel.swift */; };
+		F7C37600251391A400E92F9F /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7C375FE251391A300E92F9F /* HomeViewCell.xib */; };
+		F7C37601251391A400E92F9F /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C375FF251391A400E92F9F /* HomeViewCell.swift */; };
+		F7C37603251395B900E92F9F /* KLHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C37602251395B900E92F9F /* KLHeader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4660241335A5A15AE165735A /* Pods-KLLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLLive.debug.xcconfig"; path = "Target Support Files/Pods-KLLive/Pods-KLLive.debug.xcconfig"; sourceTree = "<group>"; };
+		50D25B3B0F2368E1614CCE9F /* Pods_KLLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8DEA5520BC67AEBAEB5FF8 /* Pods-KLLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLLive.release.xcconfig"; path = "Target Support Files/Pods-KLLive/Pods-KLLive.release.xcconfig"; sourceTree = "<group>"; };
+		F74F7F2025159DB9006EB931 /* KLMenueLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLMenueLayout.swift; sourceTree = "<group>"; };
+		F74F7F2225159F1E006EB931 /* KLMenueTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLMenueTitleView.swift; sourceTree = "<group>"; };
+		F74F7F2425159F43006EB931 /* KLMenueTitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLMenueTitleStyle.swift; sourceTree = "<group>"; };
+		F74F7F2825159FA7006EB931 /* KLMenueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLMenueView.swift; sourceTree = "<group>"; };
+		F74F7F2A2515FF91006EB931 /* KLRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KLRoomViewController.xib; sourceTree = "<group>"; };
+		F74F7F582519AB05006EB931 /* KLGiftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLGiftCell.swift; sourceTree = "<group>"; };
+		F74F7F592519AB05006EB931 /* KLGiftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KLGiftCell.xib; sourceTree = "<group>"; };
+		F74F7F5C2519CBB8006EB931 /* KLGiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLGiftViewModel.swift; sourceTree = "<group>"; };
+		F74F7F5E2519CCD1006EB931 /* KLGiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLGiftModel.swift; sourceTree = "<group>"; };
+		F74F7F602519DBB1006EB931 /* KLGiftListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLGiftListView.swift; sourceTree = "<group>"; };
+		F74F7F622519DBF3006EB931 /* GiftListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftListView.xib; sourceTree = "<group>"; };
+		F74F7FA7251D7FCE006EB931 /* UIImageView-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView-Extension.swift"; sourceTree = "<group>"; };
+		F74F7FA8251D7FCE006EB931 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		F74F7FA9251D7FCE006EB931 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		F74F7FAA251D7FCE006EB931 /* KLNibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLNibLoadable.swift; sourceTree = "<group>"; };
+		F74F7FAB251D7FCE006EB931 /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		F74F7FAC251D7FCE006EB931 /* UINavigationController-Extern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController-Extern.swift"; sourceTree = "<group>"; };
+		F74F7FAD251D7FCE006EB931 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		F74F7FB5251D8113006EB931 /* KLCustomerNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLCustomerNavigationController.swift; sourceTree = "<group>"; };
+		F74F7FB6251D8114006EB931 /* KLBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLBaseViewController.swift; sourceTree = "<group>"; };
+		F74F7FB9251D8187006EB931 /* KLNetWorkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLNetWorkTools.swift; sourceTree = "<group>"; };
+		F7B59AAC251451940050D2AE /* KLRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KLRoomViewController.swift; path = "../New Group/KLRoomViewController.swift"; sourceTree = "<group>"; };
+		F7B59AB425148E4B0050D2AE /* KLEmitterAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLEmitterAnimation.swift; sourceTree = "<group>"; };
+		F7B59AB92514A4590050D2AE /* KLRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLRoomViewModel.swift; sourceTree = "<group>"; };
+		F7B59AC12514AECC0050D2AE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F7B59AC52514B3C70050D2AE /* KLLive-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KLLive-Bridging-Header.h"; sourceTree = "<group>"; };
+		F7C3759D2511B1DF00E92F9F /* KLLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7C375A02511B1DF00E92F9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7C375A72511B1E000E92F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7C375A92511B20E00E92F9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7C375AC2511B20E00E92F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7C375AE2511B20E00E92F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7C375BA2511B64300E92F9F /* Discover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		F7C375BC2511B65D00E92F9F /* Rank.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rank.storyboard; sourceTree = "<group>"; };
+		F7C375BE2511B67100E92F9F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F7C375C02511B81400E92F9F /* KLMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KLMainViewController.swift; path = KLLive/Class/Main/KLMainViewController.swift; sourceTree = SOURCE_ROOT; };
+		F7C375C32511B8F600E92F9F /* Mine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
+		F7C375C82511BCC800E92F9F /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		F7C375D82511BF3700E92F9F /* KLHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLHomeController.swift; sourceTree = "<group>"; };
+		F7C375DA2511C10B00E92F9F /* KLRankController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLRankController.swift; sourceTree = "<group>"; };
+		F7C375DC2511C17100E92F9F /* KLHomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLHomeNavigationController.swift; sourceTree = "<group>"; };
+		F7C375DE2511EA3700E92F9F /* KLTitlePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLTitlePageView.swift; sourceTree = "<group>"; };
+		F7C375E02511EBC200E92F9F /* KLTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLTitleView.swift; sourceTree = "<group>"; };
+		F7C375E22511EBD900E92F9F /* KLContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLContentView.swift; sourceTree = "<group>"; };
+		F7C375E42511ED3A00E92F9F /* KLTitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLTitleStyle.swift; sourceTree = "<group>"; };
+		F7C375E72513109F00E92F9F /* KLHomeCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLHomeCollectionController.swift; sourceTree = "<group>"; };
+		F7C375E92513111A00E92F9F /* KLWaterLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLWaterLayout.swift; sourceTree = "<group>"; };
+		F7C375EC25134AD700E92F9F /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
+		F7C375ED25134B1400E92F9F /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
+		F7C375EE25134B1900E92F9F /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
+		F7C375F225134C3E00E92F9F /* KLHomeTitleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KLHomeTitleModel.swift; path = "../New Group/KLHomeTitleModel.swift"; sourceTree = "<group>"; };
+		F7C375F9251388E300E92F9F /* KLHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLHomeViewModel.swift; sourceTree = "<group>"; };
+		F7C375FB25138DA400E92F9F /* KLAnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLAnchorModel.swift; sourceTree = "<group>"; };
+		F7C375FE251391A300E92F9F /* HomeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
+		F7C375FF251391A400E92F9F /* HomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		F7C37602251395B900E92F9F /* KLHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLHeader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7C3759A2511B1DF00E92F9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B59AC22514AECC0050D2AE /* libz.tbd in Frameworks */,
+				F7C375C92511BCC800E92F9F /* libstdc++.tbd in Frameworks */,
+				4F1B14AA360487F324858C2B /* Pods_KLLive.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CECD52EB163BCF71EE6A5CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4660241335A5A15AE165735A /* Pods-KLLive.debug.xcconfig */,
+				8B8DEA5520BC67AEBAEB5FF8 /* Pods-KLLive.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F74F7F1F25159D3F006EB931 /* Menue */ = {
+			isa = PBXGroup;
+			children = (
+				F74F7F2025159DB9006EB931 /* KLMenueLayout.swift */,
+				F74F7F2225159F1E006EB931 /* KLMenueTitleView.swift */,
+				F74F7F2425159F43006EB931 /* KLMenueTitleStyle.swift */,
+				F74F7F2825159FA7006EB931 /* KLMenueView.swift */,
+			);
+			path = Menue;
+			sourceTree = "<group>";
+		};
+		F74F7F562518D4E0006EB931 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		F74F7F572519AA08006EB931 /* gifts */ = {
+			isa = PBXGroup;
+			children = (
+				F74F7F582519AB05006EB931 /* KLGiftCell.swift */,
+				F74F7F592519AB05006EB931 /* KLGiftCell.xib */,
+				F74F7F5C2519CBB8006EB931 /* KLGiftViewModel.swift */,
+				F74F7F5E2519CCD1006EB931 /* KLGiftModel.swift */,
+				F74F7F602519DBB1006EB931 /* KLGiftListView.swift */,
+				F74F7F622519DBF3006EB931 /* GiftListView.xib */,
+			);
+			path = gifts;
+			sourceTree = "<group>";
+		};
+		F74F7FA5251D7FCE006EB931 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F74F7FA6251D7FCE006EB931 /* extension */,
+				F74F7FAD251D7FCE006EB931 /* Common.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F74F7FA6251D7FCE006EB931 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				F74F7FA7251D7FCE006EB931 /* UIImageView-Extension.swift */,
+				F74F7FA8251D7FCE006EB931 /* UIColor-Extension.swift */,
+				F74F7FA9251D7FCE006EB931 /* UIBarButtonItem-Extension.swift */,
+				F74F7FAA251D7FCE006EB931 /* KLNibLoadable.swift */,
+				F74F7FAB251D7FCE006EB931 /* NSDate-Extension.swift */,
+				F74F7FAC251D7FCE006EB931 /* UINavigationController-Extern.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		F7B59AB0251459620050D2AE /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				F7C375E42511ED3A00E92F9F /* KLTitleStyle.swift */,
+				F7C375DE2511EA3700E92F9F /* KLTitlePageView.swift */,
+				F7C375E02511EBC200E92F9F /* KLTitleView.swift */,
+				F7C375E22511EBD900E92F9F /* KLContentView.swift */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
+		F7B59AB325148D250050D2AE /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				F7B59AB425148E4B0050D2AE /* KLEmitterAnimation.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		F7B59AB82514A4280050D2AE /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				F74F7F562518D4E0006EB931 /* views */,
+				F7B59AAC251451940050D2AE /* KLRoomViewController.swift */,
+				F74F7F2A2515FF91006EB931 /* KLRoomViewController.xib */,
+				F7B59AB92514A4590050D2AE /* KLRoomViewModel.swift */,
+				F7B59AC52514B3C70050D2AE /* KLLive-Bridging-Header.h */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		F7C375942511B1DD00E92F9F = {
+			isa = PBXGroup;
+			children = (
+				F7C3759F2511B1DF00E92F9F /* KLLive */,
+				F7C3759E2511B1DF00E92F9F /* Products */,
+				F7C375C72511BCC500E92F9F /* Frameworks */,
+				8CECD52EB163BCF71EE6A5CD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F7C3759E2511B1DF00E92F9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7C3759D2511B1DF00E92F9F /* KLLive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7C3759F2511B1DF00E92F9F /* KLLive */ = {
+			isa = PBXGroup;
+			children = (
+				F74F7FA5251D7FCE006EB931 /* Tools */,
+				F7C375F52513882700E92F9F /* Net */,
+				F7C375EB25134A5F00E92F9F /* Resources */,
+				F7C375B42511B59900E92F9F /* Class */,
+				F7C375B82511B5C800E92F9F /* Discover */,
+				F7C375C22511B8E000E92F9F /* My */,
+				F7C375A02511B1DF00E92F9F /* AppDelegate.swift */,
+				F7C375A62511B1E000E92F9F /* Main.storyboard */,
+				F7C375A92511B20E00E92F9F /* Assets.xcassets */,
+				F7C375AB2511B20E00E92F9F /* LaunchScreen.storyboard */,
+				F7C375AE2511B20E00E92F9F /* Info.plist */,
+			);
+			path = KLLive;
+			sourceTree = "<group>";
+		};
+		F7C375B42511B59900E92F9F /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F74F7F572519AA08006EB931 /* gifts */,
+				F7B59AB82514A4280050D2AE /* Live */,
+				F7C375B72511B5C000E92F9F /* Base */,
+				F7C375B62511B5B800E92F9F /* Main */,
+				F7C375B52511B5A700E92F9F /* Home */,
+				F7C375B92511B5D300E92F9F /* Rank */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		F7C375B52511B5A700E92F9F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F7C375FD2513914800E92F9F /* Views */,
+				F7C375F82513888100E92F9F /* ViewModels */,
+				F7C375F425134C5000E92F9F /* Models */,
+				F7C375DC2511C17100E92F9F /* KLHomeNavigationController.swift */,
+				F7C375BE2511B67100E92F9F /* Home.storyboard */,
+				F7C375D82511BF3700E92F9F /* KLHomeController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F7C375B62511B5B800E92F9F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F7C375C02511B81400E92F9F /* KLMainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F7C375B72511B5C000E92F9F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F74F7F1F25159D3F006EB931 /* Menue */,
+				F7B59AB325148D250050D2AE /* Animation */,
+				F74F7FB6251D8114006EB931 /* KLBaseViewController.swift */,
+				F74F7FB5251D8113006EB931 /* KLCustomerNavigationController.swift */,
+				F7C375E625130FAC00E92F9F /* KLCollectionView */,
+				F7B59AB0251459620050D2AE /* PageView */,
+				F7C37602251395B900E92F9F /* KLHeader.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F7C375B82511B5C800E92F9F /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				F7C375BA2511B64300E92F9F /* Discover.storyboard */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		F7C375B92511B5D300E92F9F /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+				F7C375BC2511B65D00E92F9F /* Rank.storyboard */,
+				F7C375DA2511C10B00E92F9F /* KLRankController.swift */,
+			);
+			path = Rank;
+			sourceTree = "<group>";
+		};
+		F7C375C22511B8E000E92F9F /* My */ = {
+			isa = PBXGroup;
+			children = (
+				F7C375C32511B8F600E92F9F /* Mine.storyboard */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		F7C375C72511BCC500E92F9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7B59AC12514AECC0050D2AE /* libz.tbd */,
+				F7C375C82511BCC800E92F9F /* libstdc++.tbd */,
+				50D25B3B0F2368E1614CCE9F /* Pods_KLLive.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7C375E625130FAC00E92F9F /* KLCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F7C375E72513109F00E92F9F /* KLHomeCollectionController.swift */,
+				F7C375E92513111A00E92F9F /* KLWaterLayout.swift */,
+			);
+			path = KLCollectionView;
+			sourceTree = "<group>";
+		};
+		F7C375EB25134A5F00E92F9F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7C375EE25134B1900E92F9F /* QHNormalEmotionSort.plist */,
+				F7C375EC25134AD700E92F9F /* QHSohuGifSort.plist */,
+				F7C375ED25134B1400E92F9F /* types.plist */,
+			);
+			name = Resources;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		F7C375F425134C5000E92F9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7C375FB25138DA400E92F9F /* KLAnchorModel.swift */,
+				F7C375F225134C3E00E92F9F /* KLHomeTitleModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F7C375F52513882700E92F9F /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				F74F7FB9251D8187006EB931 /* KLNetWorkTools.swift */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		F7C375F82513888100E92F9F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F7C375F9251388E300E92F9F /* KLHomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F7C375FD2513914800E92F9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7C375FF251391A400E92F9F /* HomeViewCell.swift */,
+				F7C375FE251391A300E92F9F /* HomeViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7C3759C2511B1DF00E92F9F /* KLLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7C375B12511B20E00E92F9F /* Build configuration list for PBXNativeTarget "KLLive" */;
+			buildPhases = (
+				D222D5D213559EA71CD0FBED /* [CP] Check Pods Manifest.lock */,
+				F7C375992511B1DF00E92F9F /* Sources */,
+				F7C3759A2511B1DF00E92F9F /* Frameworks */,
+				F7C3759B2511B1DF00E92F9F /* Resources */,
+				4A4BF03FF9027740A4DE9756 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KLLive;
+			productName = KLLive;
+			productReference = F7C3759D2511B1DF00E92F9F /* KLLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7C375952511B1DD00E92F9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KL;
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = ray;
+				TargetAttributes = {
+					F7C3759C2511B1DF00E92F9F = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = F7C375982511B1DE00E92F9F /* Build configuration list for PBXProject "KLLive" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7C375942511B1DD00E92F9F;
+			productRefGroup = F7C3759E2511B1DF00E92F9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7C3759C2511B1DF00E92F9F /* KLLive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7C3759B2511B1DF00E92F9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7C375BD2511B65D00E92F9F /* Rank.storyboard in Resources */,
+				F7C37600251391A400E92F9F /* HomeViewCell.xib in Resources */,
+				F7C375AD2511B20E00E92F9F /* LaunchScreen.storyboard in Resources */,
+				F7C375F125134B1900E92F9F /* QHNormalEmotionSort.plist in Resources */,
+				F7C375BB2511B64300E92F9F /* Discover.storyboard in Resources */,
+				F7C375F025134B1900E92F9F /* types.plist in Resources */,
+				F7C375EF25134B1900E92F9F /* QHSohuGifSort.plist in Resources */,
+				F7C375BF2511B67100E92F9F /* Home.storyboard in Resources */,
+				F74F7F632519DBF3006EB931 /* GiftListView.xib in Resources */,
+				F74F7F5B2519AB05006EB931 /* KLGiftCell.xib in Resources */,
+				F74F7F2B2515FF92006EB931 /* KLRoomViewController.xib in Resources */,
+				F7C375C42511B8F600E92F9F /* Mine.storyboard in Resources */,
+				F7C375AA2511B20E00E92F9F /* Assets.xcassets in Resources */,
+				F7C375A82511B1E000E92F9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A4BF03FF9027740A4DE9756 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KLLive/Pods-KLLive-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KLLive/Pods-KLLive-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KLLive/Pods-KLLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D222D5D213559EA71CD0FBED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KLLive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7C375992511B1DF00E92F9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74F7F2925159FA7006EB931 /* KLMenueView.swift in Sources */,
+				F74F7FB0251D7FCE006EB931 /* UIBarButtonItem-Extension.swift in Sources */,
+				F7C37601251391A400E92F9F /* HomeViewCell.swift in Sources */,
+				F7C375DB2511C10B00E92F9F /* KLRankController.swift in Sources */,
+				F7C375FA251388E300E92F9F /* KLHomeViewModel.swift in Sources */,
+				F7C375E12511EBC200E92F9F /* KLTitleView.swift in Sources */,
+				F7B59ABA2514A4590050D2AE /* KLRoomViewModel.swift in Sources */,
+				F74F7FB2251D7FCE006EB931 /* NSDate-Extension.swift in Sources */,
+				F74F7F5A2519AB05006EB931 /* KLGiftCell.swift in Sources */,
+				F7B59AAD251451940050D2AE /* KLRoomViewController.swift in Sources */,
+				F74F7F2325159F1E006EB931 /* KLMenueTitleView.swift in Sources */,
+				F74F7F5F2519CCD1006EB931 /* KLGiftModel.swift in Sources */,
+				F74F7FB3251D7FCE006EB931 /* UINavigationController-Extern.swift in Sources */,
+				F7C375E52511ED3A00E92F9F /* KLTitleStyle.swift in Sources */,
+				F7C375EA2513111A00E92F9F /* KLWaterLayout.swift in Sources */,
+				F7C375E32511EBD900E92F9F /* KLContentView.swift in Sources */,
+				F74F7F612519DBB1006EB931 /* KLGiftListView.swift in Sources */,
+				F7C37603251395B900E92F9F /* KLHeader.swift in Sources */,
+				F7C375E8251310A000E92F9F /* KLHomeCollectionController.swift in Sources */,
+				F7C375C12511B81400E92F9F /* KLMainViewController.swift in Sources */,
+				F7C375FC25138DA400E92F9F /* KLAnchorModel.swift in Sources */,
+				F74F7F5D2519CBB8006EB931 /* KLGiftViewModel.swift in Sources */,
+				F74F7F2525159F43006EB931 /* KLMenueTitleStyle.swift in Sources */,
+				F7C375DD2511C17100E92F9F /* KLHomeNavigationController.swift in Sources */,
+				F7C375F325134C3E00E92F9F /* KLHomeTitleModel.swift in Sources */,
+				F74F7FB8251D8114006EB931 /* KLBaseViewController.swift in Sources */,
+				F74F7FB1251D7FCE006EB931 /* KLNibLoadable.swift in Sources */,
+				F74F7FAF251D7FCE006EB931 /* UIColor-Extension.swift in Sources */,
+				F74F7FBA251D8187006EB931 /* KLNetWorkTools.swift in Sources */,
+				F7C375DF2511EA3700E92F9F /* KLTitlePageView.swift in Sources */,
+				F74F7FAE251D7FCE006EB931 /* UIImageView-Extension.swift in Sources */,
+				F7B59AB525148E4B0050D2AE /* KLEmitterAnimation.swift in Sources */,
+				F74F7FB4251D7FCE006EB931 /* Common.swift in Sources */,
+				F74F7FB7251D8114006EB931 /* KLCustomerNavigationController.swift in Sources */,
+				F74F7F2125159DB9006EB931 /* KLMenueLayout.swift in Sources */,
+				F7C375D92511BF3700E92F9F /* KLHomeController.swift in Sources */,
+				F7C375A12511B1DF00E92F9F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F7C375A62511B1E000E92F9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7C375A72511B1E000E92F9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7C375AB2511B20E00E92F9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7C375AC2511B20E00E92F9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7C375AF2511B20E00E92F9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7C375B02511B20E00E92F9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7C375B22511B20E00E92F9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4660241335A5A15AE165735A /* Pods-KLLive.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78AKS5G7F3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/KLLive",
+				);
+				INFOPLIST_FILE = KLLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-ios.KLLive";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KLLive/Class/Live/KLLive-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7C375B32511B20E00E92F9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B8DEA5520BC67AEBAEB5FF8 /* Pods-KLLive.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78AKS5G7F3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/KLLive",
+				);
+				INFOPLIST_FILE = KLLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-ios.KLLive";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KLLive/Class/Live/KLLive-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7C375982511B1DE00E92F9F /* Build configuration list for PBXProject "KLLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7C375AF2511B20E00E92F9F /* Debug */,
+				F7C375B02511B20E00E92F9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7C375B12511B20E00E92F9F /* Build configuration list for PBXNativeTarget "KLLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7C375B22511B20E00E92F9F /* Debug */,
+				F7C375B32511B20E00E92F9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7C375952511B1DD00E92F9F /* Project object */;
+}
